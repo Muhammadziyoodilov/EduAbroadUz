@@ -1,0 +1,142 @@
+@import "../../styles/variables";
+
+.grantsPage {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+
+  h1 {
+    @include heading;
+    font-size: 56px;
+    margin-bottom: 16px;
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    color: $color-text-muted;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  @include card;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+
+  &Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+}
+
+.flag {
+  font-size: 32px;
+}
+
+.typeBadge {
+  background: $color-accent-soft;
+  color: $color-accent;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: $radius-full;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.name {
+  @include heading;
+  font-size: 22px;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $color-text-muted;
+  font-size: 15px;
+
+  svg {
+    color: $color-accent;
+  }
+}
+
+.amount {
+  background: $color-bg-alt;
+  padding: 16px;
+  border-radius: $radius-md;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &Label {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-text-muted;
+  }
+
+  &Value {
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-text-primary;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid $color-border;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deadline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: $color-text-muted;
+  font-weight: 500;
+}
+
+.chevron {
+  color: $color-accent;
+  transition: transform 0.2s;
+}
+
+.card:hover .chevron {
+  transform: translateX(4px);
+}

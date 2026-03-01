@@ -1,0 +1,234 @@
+@import "../../styles/variables";
+
+.card {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+
+  &--grid {
+    .header {
+      height: 140px;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  }
+
+  &--list {
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 24px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .header {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      @include mobile {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    .content {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr auto;
+      align-items: center;
+      gap: 32px;
+      width: 100%;
+
+      @include tablet {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+    }
+
+    .actions {
+      justify-content: flex-end;
+    }
+
+    .chevron {
+      display: block;
+    }
+  }
+}
+
+.logoWrapper {
+  width: 64px;
+  height: 64px;
+  background: #fff;
+  border-radius: $radius-md;
+  border: 1px solid $color-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  box-shadow: $shadow-sm;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.rank {
+  background: #fff;
+  padding: 4px 10px;
+  border-radius: $radius-full;
+  font-size: 12px;
+  font-weight: 700;
+  color: $color-text-primary;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: $shadow-sm;
+  border: 1px solid $color-border;
+
+  svg {
+    color: #ffd700;
+  }
+}
+
+.titleSection {
+  margin-bottom: 16px;
+}
+
+.name {
+  @include heading;
+  font-size: 18px;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: $color-text-muted;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  background: $color-bg-alt;
+  border-radius: $radius-full;
+  color: $color-text-body;
+
+  &--scholarship {
+    background: $color-accent-soft;
+    color: $color-accent;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.stats {
+  display: flex;
+  gap: 24px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid $color-border;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $color-text-muted;
+
+  svg {
+    color: $color-accent;
+  }
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.statLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.statValue {
+  font-size: 14px;
+  font-weight: 700;
+  color: $color-text-primary;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.compareBtn {
+  @include button-outline;
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: $radius-full;
+
+  &--active {
+    background: $color-accent;
+    color: #fff;
+    border-color: $color-accent;
+
+    &:hover {
+      background: darken($color-accent, 5%);
+    }
+  }
+}
+
+.chevron {
+  display: none;
+  color: $color-text-muted;
+}

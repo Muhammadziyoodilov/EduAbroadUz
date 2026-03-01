@@ -1,0 +1,62 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text-body;
+  font-family: $font-body;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font: inherit;
+  border: 1px solid $color-border;
+  outline: none;
+  
+  &:focus {
+    border-color: $color-accent;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include heading;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  
+  @include mobile {
+    padding: 0 16px;
+  }
+}
+
+.section-padding {
+  padding: 80px 0;
+  
+  @include mobile {
+    padding: 48px 0;
+  }
+}

@@ -1,0 +1,315 @@
+@import "../../styles/variables";
+
+.home {
+  overflow-x: hidden;
+}
+
+.hero {
+  background: $color-bg;
+  border-bottom: 1px solid $color-border;
+  padding-bottom: 30px;
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__content {
+    flex: 1.5;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-accent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 80px;
+    line-height: 0.9;
+    margin-bottom: 32px;
+
+    @include mobile {
+      font-size: 48px;
+    }
+  }
+
+  &__desc {
+    font-size: 18px;
+    color: $color-text-body;
+    max-width: 540px;
+    margin-bottom: 48px;
+    line-height: 1.6;
+  }
+
+  &__search {
+    margin-bottom: 40px;
+    max-width: 800px;
+  }
+
+  &__popular {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    color: $color-text-muted;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__countryLinks {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    a {
+      color: $color-text-primary;
+      font-weight: 500;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__featured {
+    flex: 1;
+    width: 100%;
+    position: relative;
+
+    .featuredLabel {
+      position: absolute;
+      top: -12px;
+      left: 24px;
+      background: $color-dark;
+      color: #fff;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+  }
+}
+
+.sectionTitle {
+  font-size: 40px;
+  margin-bottom: 48px;
+  text-align: center;
+
+  @include mobile {
+    font-size: 32px;
+  }
+}
+
+.howItWorks {
+  background: $color-bg-alt;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__number {
+    width: 48px;
+    height: 48px;
+    border: 1px solid $color-border;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-heading;
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: $color-text-muted;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.countries {
+  background: $color-bg;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+
+  .sectionTitle {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.viewAll {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: $color-accent;
+}
+
+.countryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.countryCard {
+  @include card;
+  padding: 32px;
+  text-align: center;
+
+  &__flag {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    font-size: 20px;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+
+  &__count {
+    font-size: 14px;
+    color: $color-text-muted;
+  }
+}
+
+.stats {
+  background: $color-dark;
+  color: #fff;
+  padding: 60px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+  }
+}
+
+.statItem {
+  text-align: center;
+
+  &__value {
+    font-family: $font-heading;
+    font-size: 48px;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: $color-text-muted;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.stories {
+  background: $color-bg-alt;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.storyCard {
+  @include card;
+  padding: 40px;
+  border-left: 4px solid $color-accent;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__quote {
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.4;
+    color: $color-text-primary;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      background: $color-accent;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .name {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .uni {
+      font-size: 13px;
+      color: $color-text-muted;
+    }
+  }
+}

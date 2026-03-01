@@ -1,0 +1,230 @@
+@import "../../styles/variables";
+
+.myPlanPage {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.header {
+  margin-bottom: 48px;
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.uniList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.uniCard {
+  @include card;
+  overflow: hidden;
+
+  &--expanded {
+    background: #fff;
+    &:hover {
+      background: #fff;
+    }
+  }
+
+  &__header {
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      padding: 24px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+
+    .flag {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .meta {
+      display: flex;
+      gap: 16px;
+    }
+  }
+
+  &__progress {
+    width: 240px;
+    margin: 0 40px;
+
+    @include mobile {
+      width: 100%;
+      margin: 0;
+    }
+
+    .progressLabel {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-bottom: 8px;
+      
+      span {
+        color: $color-text-muted;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+
+    .progressBar {
+      height: 6px;
+      background: $color-border;
+    }
+
+    .progressFill {
+      height: 100%;
+      background: $color-accent;
+      transition: width 0.3s ease;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include mobile {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+.deadline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2ecc71;
+
+  &--expired {
+    color: #e74c3c;
+  }
+}
+
+.removeBtn {
+  color: $color-text-muted;
+  transition: color 0.2s;
+  &:hover {
+    color: #e74c3c;
+  }
+}
+
+.uniCard__content {
+  padding: 32px;
+  border-top: 1px solid $color-border;
+  background: $color-bg-alt;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.checklistSection, .notesSection {
+  h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+    
+    svg {
+      color: $color-accent;
+    }
+  }
+}
+
+.checklist {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.checkItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  cursor: pointer;
+
+  input {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.notesSection {
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 16px;
+    border: 1px solid $color-border;
+    resize: none;
+    font-size: 14px;
+  }
+}
+
+.contentFooter {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.viewBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-accent;
+}
+
+.empty {
+  padding: 100px 0;
+  text-align: center;
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: $color-text-muted;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+.cta {
+  @include button-primary;
+  gap: 12px;
+}

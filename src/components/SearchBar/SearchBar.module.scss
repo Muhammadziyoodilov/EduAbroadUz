@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+
+.searchBar {
+  display: flex;
+  background: #fff;
+  border: 1px solid $color-border;
+  box-shadow: $shadow-sm;
+  height: 64px;
+  width: 100%;
+
+  @include mobile {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.inputGroup, .selectGroup {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  flex: 1;
+  position: relative;
+
+  @include mobile {
+    height: 56px;
+    border-bottom: 1px solid $color-border;
+  }
+
+  .icon {
+    color: $color-text-muted;
+    margin-right: 12px;
+  }
+
+  input, select {
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    background: transparent;
+    
+    &:focus {
+      border: none;
+    }
+  }
+
+  select {
+    appearance: none;
+    cursor: pointer;
+  }
+}
+
+.divider {
+  width: 1px;
+  background: $color-border;
+  margin: 12px 0;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.chevron {
+  position: absolute;
+  right: 20px;
+  pointer-events: none;
+  color: $color-text-muted;
+}
+
+.submitBtn {
+  @include button-primary;
+  height: 100%;
+  padding: 0 32px;
+
+  @include mobile {
+    width: 100%;
+    height: 56px;
+  }
+}

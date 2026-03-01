@@ -1,0 +1,72 @@
+[
+  {
+    "id": "daad-germany",
+    "name": "DAAD Scholarship",
+    "country": "Germany",
+    "countryCode": "DE",
+    "flag": "🇩🇪",
+    "type": "Government",
+    "coverage": "Full",
+    "amount": "861 - 1200 EUR / month",
+    "benefits": ["Monthly stipend", "Travel allowance", "Health insurance", "Study subsidy"],
+    "requirements": ["Bachelor's degree", "2 years work experience (for some)", "IELTS 6.5+"],
+    "description": "The DAAD supports over 100,000 German and international students and researchers around the globe each year.",
+    "deadline": "2026-08-31"
+  },
+  {
+    "id": "mext-japan",
+    "name": "MEXT Scholarship",
+    "country": "Japan",
+    "countryCode": "JP",
+    "flag": "🇯🇵",
+    "type": "Government",
+    "coverage": "Full",
+    "amount": "117,000 - 145,000 JPY / month",
+    "benefits": ["Tuition fees", "Monthly allowance", "Round-trip airfare"],
+    "requirements": ["Academic excellence", "Willingness to learn Japanese", "Under 35 years old"],
+    "description": "The Ministry of Education, Culture, Sports, Science and Technology (MEXT) of Japan offers scholarships to international students.",
+    "deadline": "2026-05-15"
+  },
+  {
+    "id": "kgsp-korea",
+    "name": "Global Korea Scholarship (GKS)",
+    "country": "Korea",
+    "countryCode": "KR",
+    "flag": "🇰🇷",
+    "type": "Government",
+    "coverage": "Full",
+    "amount": "900,000 - 1,000,000 KRW / month",
+    "benefits": ["Tuition fees", "Living allowance", "Airfare", "Language training"],
+    "requirements": ["GPA 80%+", "Under 25 (Bachelor) / 40 (Graduate)", "Health certificate"],
+    "description": "Designed to provide international students with opportunities to study at higher educational institutions in Korea.",
+    "deadline": "2026-03-20"
+  },
+  {
+    "id": "turkiye-burslari",
+    "name": "Türkiye Bursları",
+    "country": "Turkey",
+    "countryCode": "TR",
+    "flag": "🇹🇷",
+    "type": "Government",
+    "coverage": "Full",
+    "amount": "1000 - 1800 TRY / month",
+    "benefits": ["Tuition fees", "Accommodation", "Health insurance", "Turkish language course", "Airfare"],
+    "requirements": ["Academic criteria", "Age criteria", "Not currently studying in Turkey"],
+    "description": "Turkey Scholarships is a government-funded, competitive scholarship program.",
+    "deadline": "2026-02-20"
+  },
+  {
+    "id": "csc-china",
+    "name": "Chinese Government Scholarship",
+    "country": "China",
+    "countryCode": "CN",
+    "flag": "🇨🇳",
+    "type": "Government",
+    "coverage": "Full",
+    "amount": "2500 - 3500 CNY / month",
+    "benefits": ["Tuition fees", "Accommodation", "Stipend", "Medical insurance"],
+    "requirements": ["Non-Chinese citizen", "Good health", "Academic background"],
+    "description": "Established by the Ministry of Education of China to provide support to international students.",
+    "deadline": "2026-04-30"
+  }
+]

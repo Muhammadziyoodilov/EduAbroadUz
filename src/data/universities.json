@@ -1,0 +1,637 @@
+[
+  {
+    "id": "tum-germany",
+    "name": "Technical University of Munich",
+    "country": "Germany",
+    "countryCode": "DE",
+    "flag": "🇩🇪",
+    "city": "Munich",
+    "qsRank": 28,
+    "founded": 1868,
+    "totalStudents": 50000,
+    "acceptanceRate": 8,
+    "fields": ["Engineering", "IT", "Science"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 6.5,
+    "ieltsAvg": 7,
+    "satMin": 1350,
+    "toeflMin": 88,
+    "gpaMin": 3.5,
+    "tuitionMin": 0,
+    "tuitionMax": 6000,
+    "language": "German/English",
+    "hasScholarship": true,
+    "scholarshipInfo": "DAAD, TUM Scholarships",
+    "logo": "https://i.pinimg.com/1200x/1b/2c/1e/1b2c1edceedd0b3820937908a382a5d5.jpg",
+    "photo": "https://i.pinimg.com/736x/d0/38/13/d0381302a584f9100d017f920171546d.jpg",
+    "description": "One of Europe's top universities. It is known for its excellence in research and teaching, interdisciplinary studies and talent management.",
+    "website": "https://www.tum.de",
+    "programs": [
+      {
+        "name": "Informatics",
+        "degree": "Bachelor",
+        "language": "German",
+        "duration": "3 years",
+        "price": 0
+      },
+      {
+        "name": "Management and Technology",
+        "degree": "Master",
+        "language": "English",
+        "duration": "2 years",
+        "price": 0
+      }
+    ],
+    "stories": [
+      {
+        "name": "Javohir",
+        "year": 2023,
+        "field": "IT",
+        "score": "IELTS 7.5",
+        "quote": {
+          "uz": "TUMda o'qish qiyin, lekin natijasi bunga arziydi.",
+          "ru": "Учиться в TUM сложно, но результат того стоит.",
+          "en": "Studying at TUM is hard, but the result is worth it."
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "passport",
+        "name": "Passport"
+      },
+      {
+        "id": "diploma",
+        "name": "High School Diploma"
+      },
+      {
+        "id": "ielts",
+        "name": "IELTS Certificate"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "Winter Semester",
+        "date": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": "mit-usa",
+    "name": "Massachusetts Institute of Technology",
+    "country": "USA",
+    "countryCode": "US",
+    "flag": "🇺🇸",
+    "city": "Cambridge",
+    "qsRank": 1,
+    "founded": 1861,
+    "totalStudents": 11000,
+    "acceptanceRate": 4,
+    "fields": ["Engineering", "Science", "IT"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 7.5,
+    "ieltsAvg": 8,
+    "satMin": 1500,
+    "toeflMin": 100,
+    "gpaMin": 4,
+    "tuitionMin": 55000,
+    "tuitionMax": 60000,
+    "language": "English",
+    "hasScholarship": true,
+    "scholarshipInfo": "Need-blind financial aid",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/MIT_2023_red_logo.svg/250px-MIT_2023_red_logo.svg.png",
+    "photo": "https://i.pinimg.com/736x/69/7c/20/697c20b5e3ce6771b8d59dc154089d0c.jpg",
+    "description": "The Massachusetts Institute of Technology is a private land-grant research university in Cambridge, Massachusetts.",
+    "website": "https://www.mit.edu",
+    "programs": [
+      {
+        "name": "Computer Science",
+        "degree": "Bachelor",
+        "language": "English",
+        "duration": "4 years",
+        "price": 55000
+      }
+    ],
+    "stories": [
+      {
+        "name": "Dilshod",
+        "year": 2024,
+        "field": "Engineering",
+        "score": "SAT 1580",
+        "quote": {
+          "uz": "MIT - bu orzu!",
+          "ru": "MIT - это мечта!",
+          "en": "MIT is a dream!"
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "sat",
+        "name": "SAT Scores"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "Early Action",
+        "date": "2025-11-01"
+      }
+    ]
+  },
+  {
+    "id": "oxford-uk",
+    "name": "University of Oxford",
+    "country": "UK",
+    "countryCode": "GB",
+    "flag": "🇬🇧",
+    "city": "Oxford",
+    "qsRank": 3,
+    "founded": 1096,
+    "totalStudents": 25000,
+    "acceptanceRate": 17,
+    "fields": ["Social Sciences", "Arts", "Medicine"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 7,
+    "ieltsAvg": 7.5,
+    "satMin": 1470,
+    "toeflMin": 100,
+    "gpaMin": 3.8,
+    "tuitionMin": 30000,
+    "tuitionMax": 50000,
+    "language": "English",
+    "hasScholarship": true,
+    "scholarshipInfo": "Clarendon Fund, Rhodes Scholarship",
+    "logo": "https://i.pinimg.com/1200x/f7/27/f4/f727f4d46e85b5f0bf12cdd471a1be23.jpg",
+    "photo": "https://i.pinimg.com/736x/a3/ac/bd/a3acbd2036a5fb8b854f114e2059201e.jpg",
+    "description": "The University of Oxford is a collegiate research university in Oxford, England.",
+    "website": "https://www.ox.ac.uk",
+    "programs": [
+      {
+        "name": "Philosophy, Politics and Economics",
+        "degree": "Bachelor",
+        "language": "English",
+        "duration": "3 years",
+        "price": 35000
+      }
+    ],
+    "stories": [
+      {
+        "name": "Nigora",
+        "year": 2022,
+        "field": "Social Sciences",
+        "score": "IELTS 8.0",
+        "quote": {
+          "uz": "Oksford muhiti o'zgacha.",
+          "ru": "Атмосфера Оксфорда уникальна.",
+          "en": "The Oxford atmosphere is unique."
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "ielts",
+        "name": "IELTS"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "UCAS Deadline",
+        "date": "2025-10-15"
+      }
+    ]
+  },
+  {
+    "id": "kaist-korea",
+    "name": "KAIST",
+    "country": "Korea",
+    "countryCode": "KR",
+    "flag": "🇰🇷",
+    "city": "Daejeon",
+    "qsRank": 56,
+    "founded": 1971,
+    "totalStudents": 10000,
+    "acceptanceRate": 15,
+    "fields": ["Engineering", "IT", "Science"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 6.5,
+    "ieltsAvg": 7,
+    "satMin": 1400,
+    "toeflMin": 83,
+    "gpaMin": 3.3,
+    "tuitionMin": 0,
+    "tuitionMax": 8000,
+    "language": "English/Korean",
+    "hasScholarship": true,
+    "scholarshipInfo": "KAIST International Student Scholarship",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRih4flGNLv0uTej9QTnyqHsGnCRsn77qmizA&s",
+    "photo": "https://i.pinimg.com/736x/5e/43/62/5e43625953a8491866b7e7686082759e.jpg",
+    "description": "KAIST is the first and top science and technology university in Korea.",
+    "website": "https://www.kaist.ac.kr",
+    "programs": [
+      {
+        "name": "Electrical Engineering",
+        "degree": "Bachelor",
+        "language": "English",
+        "duration": "4 years",
+        "price": 0
+      }
+    ],
+    "stories": [
+      {
+        "name": "Sardor",
+        "year": 2023,
+        "field": "Engineering",
+        "score": "IELTS 7.0",
+        "quote": {
+          "uz": "Koreyada texnologiya juda rivojlangan.",
+          "ru": "Технологии в Корее очень развиты.",
+          "en": "Technology in Korea is very advanced."
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "passport",
+        "name": "Passport"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "International Admission",
+        "date": "2025-12-20"
+      }
+    ]
+  },
+  {
+    "id": "tsinghua-china",
+    "name": "Tsinghua University",
+    "country": "China",
+    "countryCode": "CN",
+    "flag": "🇨🇳",
+    "city": "Beijing",
+    "qsRank": 25,
+    "founded": 1911,
+    "totalStudents": 50000,
+    "acceptanceRate": 2,
+    "fields": ["Engineering", "Business", "Science"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 6,
+    "ieltsAvg": 6.5,
+    "satMin": 1450,
+    "toeflMin": 80,
+    "gpaMin": 3.5,
+    "tuitionMin": 4000,
+    "tuitionMax": 8000,
+    "language": "Chinese/English",
+    "hasScholarship": true,
+    "scholarshipInfo": "Chinese Government Scholarship (CSC)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Tsinghua_University_Logo.svg/250px-Tsinghua_University_Logo.svg.png",
+    "photo": "https://i.pinimg.com/736x/c9/75/25/c975251e5c0b3d5cef05e5c6dbbb66e1.jpg",
+    "description": "Tsinghua University is a major research university in Beijing and a member of the C9 League.",
+    "website": "https://www.tsinghua.edu.cn",
+    "programs": [
+      {
+        "name": "Global Business",
+        "degree": "Bachelor",
+        "language": "English",
+        "duration": "4 years",
+        "price": 5000
+      }
+    ],
+    "stories": [
+      {
+        "name": "Malika",
+        "year": 2024,
+        "field": "Business",
+        "score": "HSK 5",
+        "quote": {
+          "uz": "Xitoyda ta'lim olish qiziqarli tajriba.",
+          "ru": "Учеба в Китае - это интересный опыт.",
+          "en": "Studying in China is an interesting experience."
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "hsk",
+        "name": "HSK Certificate"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "Spring Admission",
+        "date": "2025-11-30"
+      }
+    ]
+  },
+  {
+    "id": "tokyo-japan",
+    "name": "University of Tokyo",
+    "country": "Japan",
+    "countryCode": "JP",
+    "flag": "🇯🇵",
+    "city": "Tokyo",
+    "qsRank": 28,
+    "founded": 1877,
+    "totalStudents": 28000,
+    "acceptanceRate": 10,
+    "fields": ["Science", "Engineering", "Arts"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 6.5,
+    "ieltsAvg": 7,
+    "satMin": 1450,
+    "toeflMin": 90,
+    "gpaMin": 3.5,
+    "tuitionMin": 5000,
+    "tuitionMax": 6000,
+    "language": "Japanese/English",
+    "hasScholarship": true,
+    "scholarshipInfo": "MEXT Scholarship",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzc0fz12M_rkHqI4ZN47cj28nUX873kwE8iA&s",
+    "photo": "https://i.pinimg.com/1200x/68/2c/b7/682cb78820e06b89ed8e2df2a204cbd0.jpg",
+    "description": "The University of Tokyo is a world-class center for research and education.",
+    "website": "https://www.u-tokyo.ac.jp",
+    "programs": [
+      {
+        "name": "PEAK Program",
+        "degree": "Bachelor",
+        "language": "English",
+        "duration": "4 years",
+        "price": 5300
+      }
+    ],
+    "stories": [
+      {
+        "name": "Bekzod",
+        "year": 2023,
+        "field": "Science",
+        "score": "IELTS 7.5",
+        "quote": {
+          "uz": "Yapon madaniyati va ta'limi meni hayratda qoldirdi.",
+          "ru": "Японская культура и образование меня поразили.",
+          "en": "Japanese culture and education amazed me."
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "passport",
+        "name": "Passport"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "PEAK Admission",
+        "date": "2025-12-01"
+      }
+    ]
+  },
+  {
+    "id": "metu-turkey",
+    "name": "Middle East Technical University",
+    "country": "Turkey",
+    "countryCode": "TR",
+    "flag": "🇹🇷",
+    "city": "Ankara",
+    "qsRank": 336,
+    "founded": 1956,
+    "totalStudents": 27000,
+    "acceptanceRate": 5,
+    "fields": ["Engineering", "Social Sciences", "Architecture"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 6,
+    "ieltsAvg": 6.5,
+    "satMin": 1200,
+    "toeflMin": 79,
+    "gpaMin": 3,
+    "tuitionMin": 500,
+    "tuitionMax": 2000,
+    "language": "English",
+    "hasScholarship": true,
+    "scholarshipInfo": "Türkiye Bursları",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_of_METU.svg/250px-Logo_of_METU.svg.png",
+    "photo": "https://mcdonnell.washu.edu/app/uploads/2025/05/METU.jpg",
+    "description": "METU is a public research university in Ankara, Turkey.",
+    "website": "https://www.metu.edu.tr",
+    "programs": [
+      {
+        "name": "Civil Engineering",
+        "degree": "Bachelor",
+        "language": "English",
+        "duration": "4 years",
+        "price": 1000
+      }
+    ],
+    "stories": [
+      {
+        "name": "Jasur",
+        "year": 2022,
+        "field": "Engineering",
+        "score": "SAT 1350",
+        "quote": {
+          "uz": "Turkiyada o'qish hamyonbop va sifatli.",
+          "ru": "Учеба в Турции доступная и качественная.",
+          "en": "Studying in Turkey is affordable and high quality."
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "diploma",
+        "name": "Diploma"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "International Students",
+        "date": "2026-07-15"
+      }
+    ]
+  },
+  {
+    "id": "charles-czech",
+    "name": "Charles University",
+    "country": "Czech",
+    "countryCode": "CZ",
+    "flag": "🇨🇿",
+    "city": "Prague",
+    "qsRank": 248,
+    "founded": 1348,
+    "totalStudents": 50000,
+    "acceptanceRate": 20,
+    "fields": ["Medicine", "Arts", "Science"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 6,
+    "ieltsAvg": 6.5,
+    "satMin": 1200,
+    "toeflMin": 80,
+    "gpaMin": 3,
+    "tuitionMin": 0,
+    "tuitionMax": 15000,
+    "language": "Czech/English",
+    "hasScholarship": true,
+    "scholarshipInfo": "Government Scholarships for Developing Countries",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Charles-University-symbol-4.svg/250px-Charles-University-symbol-4.svg.png",
+    "photo": "https://msmstudy.eu/wp-content/uploads/2021/07/carlov.jpg",
+    "description": "Charles University is the oldest and largest university in the Czech Republic.",
+    "website": "https://www.cuni.cz",
+    "programs": [
+      {
+        "name": "General Medicine",
+        "degree": "Bachelor",
+        "language": "English",
+        "duration": "6 years",
+        "price": 14000
+      }
+    ],
+    "stories": [
+      {
+        "name": "Kamola",
+        "year": 2023,
+        "field": "Medicine",
+        "score": "IELTS 7.0",
+        "quote": {
+          "uz": "Praga - talabalar uchun ajoyib shahar.",
+          "ru": "Прага - отличный город для студентов.",
+          "en": "Prague is a great city for students."
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "nostrification",
+        "name": "Nostrification"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "Medicine Intake",
+        "date": "2026-03-31"
+      }
+    ]
+  },
+  {
+    "id": "sorbonne-france",
+    "name": "Sorbonne University",
+    "country": "France",
+    "countryCode": "FR",
+    "flag": "🇫🇷",
+    "city": "Paris",
+    "qsRank": 59,
+    "founded": 1257,
+    "totalStudents": 55000,
+    "acceptanceRate": 15,
+    "fields": ["Arts", "Medicine", "Science"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 6.5,
+    "ieltsAvg": 7,
+    "satMin": 1300,
+    "toeflMin": 90,
+    "gpaMin": 3.5,
+    "tuitionMin": 200,
+    "tuitionMax": 4000,
+    "language": "French/English",
+    "hasScholarship": true,
+    "scholarshipInfo": "Eiffel Excellence Scholarship",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7_47cb8Ngkcl1xn_TOaI2IvvUz1UrwwSzw&s",
+    "photo": "https://i.pinimg.com/1200x/ee/5e/78/ee5e788ea2ef5a7b0c3b263771d667ed.jpg",
+    "description": "Sorbonne University is a world-class research university in Paris.",
+    "website": "https://www.sorbonne-universite.fr",
+    "programs": [
+      {
+        "name": "French Literature",
+        "degree": "Bachelor",
+        "language": "French",
+        "duration": "3 years",
+        "price": 170
+      }
+    ],
+    "stories": [
+      {
+        "name": "Shahnoza",
+        "year": 2024,
+        "field": "Arts",
+        "score": "DELF B2",
+        "quote": {
+          "uz": "Fransuz tili va madaniyati meni maftun etdi.",
+          "ru": "Французский язык и культура меня очаровали.",
+          "en": "The French language and culture fascinated me."
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "delf",
+        "name": "DELF/DALF"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "Parcoursup",
+        "date": "2026-03-11"
+      }
+    ]
+  },
+  {
+    "id": "delft-netherlands",
+    "name": "Delft University of Technology",
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "flag": "🇳🇱",
+    "city": "Delft",
+    "qsRank": 47,
+    "founded": 1842,
+    "totalStudents": 26000,
+    "acceptanceRate": 15,
+    "fields": ["Engineering", "IT", "Architecture"],
+    "degrees": ["Bachelor", "Master", "PhD"],
+    "ieltsMin": 6.5,
+    "ieltsAvg": 7,
+    "satMin": 1350,
+    "toeflMin": 90,
+    "gpaMin": 3.5,
+    "tuitionMin": 2000,
+    "tuitionMax": 20000,
+    "language": "English/Dutch",
+    "hasScholarship": true,
+    "scholarshipInfo": "Justus & Louise van Effen Excellence Scholarships",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Zegel_Technische_Universiteit_Delft.svg/250px-Zegel_Technische_Universiteit_Delft.svg.png",
+    "photo": "https://i.pinimg.com/736x/9d/3b/2f/9d3b2f19d065fff4cc64161eab4a4293.jpg",
+    "description": "TU Delft is the oldest and largest Dutch public technological university.",
+    "website": "https://www.tudelft.nl",
+    "programs": [
+      {
+        "name": "Aerospace Engineering",
+        "degree": "Bachelor",
+        "language": "English",
+        "duration": "3 years",
+        "price": 15000
+      }
+    ],
+    "stories": [
+      {
+        "name": "Rustam",
+        "year": 2023,
+        "field": "Engineering",
+        "score": "IELTS 7.5",
+        "quote": {
+          "uz": "Niderlandiyada ta'lim tizimi juda samarali.",
+          "ru": "Система образования в Нидерландах очень эффективна.",
+          "en": "The education system in the Netherlands is very effective."
+        }
+      }
+    ],
+    "documents": [
+      {
+        "id": "passport",
+        "name": "Passport"
+      }
+    ],
+    "deadlines": [
+      {
+        "type": "Non-EU Deadline",
+        "date": "2026-01-15"
+      }
+    ]
+  }
+]

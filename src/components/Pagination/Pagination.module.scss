@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pageBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-text-primary;
+  transition: all 0.2s $ease-out;
+
+  &:hover {
+    background: $color-bg-alt;
+    border-color: $color-border-hover;
+  }
+
+  &--active {
+    background: $color-accent;
+    color: #fff;
+    border-color: $color-accent;
+
+    &:hover {
+      background: $color-accent;
+    }
+  }
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  color: $color-text-primary;
+  transition: all 0.2s $ease-out;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    background: $color-bg-alt;
+    border-color: $color-border-hover;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
+
+.dots {
+  color: $color-text-muted;
+  padding: 0 4px;
+}

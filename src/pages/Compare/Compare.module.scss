@@ -1,0 +1,331 @@
+@import "../../styles/variables";
+
+.comparePage {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  h1 {
+    @include heading;
+    font-size: 40px;
+  }
+}
+
+.clearBtn {
+  @include button-outline;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: $color-text-muted;
+
+  &:hover {
+    color: #ff4444;
+    border-color: #ff4444;
+    background: rgba(255, 68, 68, 0.05);
+  }
+}
+
+.winnerCard {
+  background: $color-accent-soft;
+  border: 1px solid $color-accent;
+  border-radius: $radius-lg;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+
+  .winnerIcon {
+    width: 64px;
+    height: 64px;
+    background: $color-accent;
+    color: #fff;
+    border-radius: $radius-full;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 {
+    @include heading;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  p {
+    color: $color-text-body;
+  }
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-sm;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  th, td {
+    padding: 24px;
+    border-bottom: 1px solid $color-border;
+    text-align: left;
+  }
+
+  th {
+    background: $color-bg-alt;
+  }
+}
+
+.labelCol {
+  width: 240px;
+  font-weight: 700;
+  color: $color-text-muted;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: #fff !important;
+}
+
+.criteriaLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $color-text-muted;
+
+  svg {
+    color: $color-accent;
+  }
+}
+
+.uniHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  text-align: center;
+}
+
+.removeBtn {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border: 1px solid $color-border;
+  border-radius: $radius-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: #ff4444;
+    color: #fff;
+    border-color: #ff4444;
+  }
+}
+
+.uniLogo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background: #fff;
+  padding: 8px;
+  border-radius: $radius-md;
+  border: 1px solid $color-border;
+}
+
+.uniName {
+  @include heading;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.winnerBadge {
+  background: $color-accent;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: $radius-full;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.valueCol {
+  text-align: center;
+  font-weight: 600;
+  color: $color-text-primary;
+}
+
+.winnerCell {
+  background: rgba(24, 71, 237, 0.02);
+}
+
+.addCol {
+  background: #fff !important;
+}
+
+.addBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 100%;
+  color: $color-text-muted;
+  text-decoration: none;
+  border: 2px dashed $color-border;
+  border-radius: $radius-lg;
+  padding: 40px 20px;
+  transition: all 0.2s;
+
+  &:hover {
+    border-color: $color-accent;
+    color: $color-accent;
+    background: $color-accent-soft;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+.empty {
+  padding: 120px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  svg {
+    color: $color-text-muted;
+  }
+
+  h1 {
+    @include heading;
+    font-size: 32px;
+  }
+
+  p {
+    color: $color-text-muted;
+    max-width: 400px;
+  }
+}
+
+.cta {
+  @include button-primary;
+}
+
+/* Mobile Styles */
+.mobileList {
+  display: none;
+  flex-direction: column;
+  gap: 24px;
+
+  @include mobile {
+    display: flex;
+  }
+}
+
+.mobileCard {
+  @include card;
+  padding: 24px;
+
+  &Header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $color-border;
+
+    img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    button {
+      margin-left: auto;
+      color: $color-text-muted;
+      background: none;
+      border: none;
+    }
+  }
+
+  &Title {
+    h3 {
+      @include heading;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+  }
+
+  &Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.winnerCardMobile {
+  border-color: $color-accent;
+  background: $color-accent-soft;
+}
+
+.mobileStat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &Label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: $color-text-muted;
+    font-weight: 700;
+  }
+
+  &Value {
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-text-primary;
+  }
+}
+
+.mobileAddBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  border: 2px dashed $color-border;
+  border-radius: $radius-lg;
+  color: $color-text-muted;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    border-color: $color-accent;
+    color: $color-accent;
+  }
+}

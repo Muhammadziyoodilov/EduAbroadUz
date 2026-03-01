@@ -1,0 +1,85 @@
+@import "../../styles/variables";
+
+.footer {
+  background: $color-dark;
+  color: #fff;
+  padding: 80px 0 40px;
+  margin-top: 80px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__brand {
+    max-width: 320px;
+  }
+
+  &__desc {
+    margin-top: 20px;
+    color: $color-text-muted;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  &__links {
+    display: flex;
+    gap: 80px;
+
+    @include mobile {
+      gap: 40px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h4 {
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 8px;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: $color-text-muted;
+      font-size: 14px;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+    text-align: center;
+    color: $color-text-muted;
+    font-size: 12px;
+  }
+}
+
+.logo {
+  @include heading;
+  font-size: 24px;
+  letter-spacing: -1px;
+  color: #fff;
+
+  span {
+    color: $color-accent;
+  }
+}

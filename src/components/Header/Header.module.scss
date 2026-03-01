@@ -1,0 +1,205 @@
+@import "../../styles/variables";
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: $color-bg;
+  border-bottom: 1px solid $color-border;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.logo {
+  @include heading;
+  font-size: 24px;
+  letter-spacing: -1px;
+  color: $color-dark;
+
+  span {
+    color: $color-accent;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+
+  @include tablet {
+    display: none;
+  }
+
+  &__link {
+    font-family: $font-body;
+    font-weight: 500;
+    font-size: 15px;
+    color: $color-text-body;
+    transition: color 0.2s ease;
+    position: relative;
+
+    &:hover {
+      color: $color-accent;
+    }
+
+    &--active {
+      color: $color-accent;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $color-accent;
+      }
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @include mobile {
+    gap: 12px;
+  }
+}
+
+.langSwitcher {
+  display: flex;
+  gap: 8px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.langBtn {
+  font-size: 12px;
+  font-weight: 600;
+  color: $color-text-muted;
+  padding: 4px;
+  position: relative;
+
+  &--active {
+    color: $color-accent;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $color-accent;
+    }
+  }
+}
+
+.loginBtn {
+  @include button-outline;
+  padding: 8px 20px;
+  font-size: 14px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.registerBtn {
+  @include button-primary;
+  padding: 8px 20px;
+  font-size: 14px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.menuBtn {
+  display: none;
+  @include tablet {
+    display: flex;
+  }
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $color-bg;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+
+  &--open {
+    transform: translateY(0);
+  }
+
+  &__header {
+    height: 80px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-border;
+  }
+
+  &__content {
+    flex: 1;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__lang {
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+
+    .langBtn {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    font-size: 24px;
+    @include heading;
+    letter-spacing: -1px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .loginBtn,
+    .registerBtn {
+      display: flex;
+      width: 100%;
+      padding: 16px;
+    }
+  }
+}

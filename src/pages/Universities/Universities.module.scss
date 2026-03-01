@@ -1,0 +1,282 @@
+@import "../../styles/variables";
+
+.universitiesPage {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  gap: 24px;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    @include heading;
+    font-size: 48px;
+    margin-bottom: 8px;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  p {
+    color: $color-text-muted;
+    font-size: 16px;
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: flex-start;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  position: sticky;
+  top: 120px;
+  background: #fff;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  padding: 24px;
+
+  @include tablet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 0;
+    overflow-y: auto;
+
+    &--open {
+      transform: translateX(0);
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    h3 {
+      @include heading;
+      font-size: 20px;
+    }
+  }
+}
+
+.closeBtn {
+  display: none;
+  @include tablet {
+    display: flex;
+  }
+}
+
+.clearBtn {
+  font-size: 13px;
+  font-weight: 600;
+  color: $color-accent;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.filterGroup {
+  margin-bottom: 32px;
+
+  label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $color-text-muted;
+    margin-bottom: 12px;
+  }
+}
+
+.searchInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  svg {
+    position: absolute;
+    left: 12px;
+    color: $color-text-muted;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 12px 10px 36px;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    font-size: 14px;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: $color-accent;
+    }
+  }
+}
+
+.checkboxList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: $color-text-body;
+
+  input {
+    width: 16px;
+    height: 16px;
+    accent-color: $color-accent;
+  }
+
+  &:hover {
+    color: $color-text-primary;
+  }
+}
+
+.chipList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 6px 14px;
+  background: $color-bg-alt;
+  border: 1px solid $color-border;
+  border-radius: $radius-full;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    border-color: $color-border-hover;
+  }
+
+  &--active {
+    background: $color-accent;
+    color: #fff;
+    border-color: $color-accent;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-bottom: 24px;
+
+  @include mobile {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.mobileFilterBtn {
+  display: none;
+  @include tablet {
+    @include button-outline;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+.sortWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: $color-text-muted;
+
+  select {
+    padding: 8px 12px;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    background: #fff;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      border-color: $color-accent;
+    }
+  }
+}
+
+.viewToggle {
+  display: flex;
+  background: $color-bg-alt;
+  padding: 4px;
+  border-radius: $radius-md;
+
+  button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius-sm;
+    color: $color-text-muted;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-text-primary;
+    }
+  }
+
+  &--active {
+    background: #fff !important;
+    color: $color-accent !important;
+    box-shadow: $shadow-sm;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
